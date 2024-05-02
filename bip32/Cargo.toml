@@ -13,7 +13,7 @@ coins-core = { version = "0.8.3", path = "../core" }
 bs58 = "0.5"
 digest = "0.10"
 hmac = "0.12"
-k256 = { version = "0.13", features = ["std", "arithmetic"] }
+k256 = { git = "https://github.com/zmovane/elliptic-curves", branch = "fix/deps", package = "k256", features = ["std", "arithmetic"] }
 serde = "1.0"
 sha2 = "0.10"
 thiserror = "1.0"
